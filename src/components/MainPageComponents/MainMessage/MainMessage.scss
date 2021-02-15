@@ -9,8 +9,20 @@
 }
 
 .MPMMessahe {
-    color: white;
+    color: rgb(241, 151, 119);
     font-size: 230%;
-    padding-left: 20px;
+    margin-left: 12%;
     width: 200px;
+}
+
+@media (min-width: 769px) {
+    .MPMMessahe {
+        background-color: rgba(12, 12, 12, 0.5);
+        padding: 50px;
+        padding-left: 15%;
+        margin-left: 0;
+        width: max-content;
+        text-align: right;
+        border-radius: 0 7px 7px 0;
+    }
 }

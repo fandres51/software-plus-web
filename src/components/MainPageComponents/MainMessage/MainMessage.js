@@ -11,7 +11,10 @@ const MainPageMessage = () => {
             alignItems="flex-start"
         >
             <div className="MPMMessahe">
-                <h2>Convertimos tus ideas en realidad</h2>
+                <h2>Convertimos</h2>
+                <h2>tus ideas</h2>
+                <h2>en</h2>
+                <h2>realidad</h2>
             </div>
         </Grid>
     );
