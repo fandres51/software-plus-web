@@ -1,5 +1,5 @@
 import img1 from '../images/img1.jpg';
-import img2 from '../images/img2.jpeg';
+import img2 from '../images/img2.jpg';
 import img3 from '../images/img3.jpg';
 
 const reasons = [
@@ -17,7 +17,7 @@ const reasons = [
     },
     {
         id: "3",
-        pictureURL: img2,
+        pictureURL: img3,
         title: "Somos un grupo de amigos",
     text: "Somos un grupo de estudiantes graduados de la Escuela Politécnica Nacional. Nos hemos conocido por anos y sabemos como trabajar juntos en un clima de confianza y compñerismo."
     }

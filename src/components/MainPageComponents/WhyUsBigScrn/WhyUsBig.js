@@ -1,31 +1,25 @@
-// import { Grid } from "@material-ui/core";
-// import Tab from "@material-ui/core/Tab";
-// import TabPanel from '@material-ui/lab/TabPanel';
-// import AppBar from '@material-ui/core/AppBar';
+import reasons from "../../../assets/data/whyUsReasons";
+import "./WhyUsBig.scss";
+import Title from "../../Reusable/Title/Title";
+import PicWithTxtBig from "../../Reusable/PicWithTxtBig/PicWithTxtBig";
 
-// const WhyUsBig = () => {
-//     const [value, setValue] = React.useState('1');
+const WhyUsBig = () => {
+    return (
+        <div className="wub">
+            <div className="wub-title">
+                <Title text="¿Por qué nosotros?" lines="true"></Title>
+            </div>
+            <div className="wub-reasons">
+                {reasons.map((reason, i) => (
+                    <div className="reason" key={reason.id}>
+                        <PicWithTxtBig title={reason.title} text={reason.text} pictureURL={reason.pictureURL}/>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
 
-//     const handleChange = (event, newValue) => {
-//       setValue(newValue);
-//     };
-  
-//     return (
-//       <div>
-//         <TabContext value={value}>
-//           <AppBar position="static">
-//             <TabList onChange={handleChange} aria-label="simple tabs example">
-//               <Tab label="Item One" value="1" />
-//               <Tab label="Item Two" value="2" />
-//               <Tab label="Item Three" value="3" />
-//             </TabList>
-//           </AppBar>
-//           <TabPanel value="1">Item One</TabPanel>
-//           <TabPanel value="2">Item Two</TabPanel>
-//           <TabPanel value="3">Item Three</TabPanel>
-//         </TabContext>
-//       </div>
-//     );
-// }
 
-// export default WhyUsBig;
+
+export default WhyUsBig;

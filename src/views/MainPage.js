@@ -3,14 +3,18 @@ import MainPageMessage from "../components/MainPageComponents/MainMessage/MainMe
 import TeamSection from "../components/MainPageComponents/TeamSection/TeamSection";
 import WhyUs from "../components/MainPageComponents/WhyUsSection/WhyUs";
 import WhyUsBig from "../components/MainPageComponents/WhyUsBigScrn/WhyUsBig";
+import useWindowSize from "../hooks/useWindowSize";
 
 const MainPage = () => {
+    
+    const winSize = useWindowSize();
+
     return (  
+        
         <div>
-            <MainPageMessage />
-            {/* {(screen.width > 769) && <WhyUs /> }
-            {(screen.width < 769) && <WhyUsBig /> } */}
-            <WhyUs />
+            <MainPageMessage/>
+            {(winSize.width < 769) && <WhyUs /> }
+            {(winSize.width > 769) && <WhyUsBig /> }
             <TeamSection />
             <Footer />
         </div>
